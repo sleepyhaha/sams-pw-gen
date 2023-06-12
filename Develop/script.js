@@ -1,15 +1,18 @@
 // Assignment code here
 
 //
+const characters = {
+  lowerCharacters: "abcdefghijklmnopqrstuvwxyz",
+  upperCharacters: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+  numbers: "012345679",
+  specialCharacters: "!#$%&'()*+,-./:;<=>?@[]^_`{|}~",
+};
+
 function generatePassword(length) {
-  const characters = "abcdefghijklmnopqrstuvwxyz";
-  const upperCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  const numbers = "012345679";
-  const specialCharacters = "!#$%&'()*+,-./:;<=>?@[]^_`{|}~";
   let result = "";
   const charactersLength = characters.length;
-  for (let i = 0; i < length; index++) {
-    result += characters.charAt(Math.floor(Math.random() * charactersLength));
+  for (let i = 0; i < length; i++) {
+    result += Math.floor(Math.random() * characters);
   }
 
   return result;
@@ -20,6 +23,11 @@ const generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword() {
+  window.prompt("Please select a password length between 8 and 128 characters");
+  window.confirm("Would you like to add lowercase letters?");
+  window.confirm("Would you like to add uppercase letters?");
+  window.confirm("Would you like to add numbers?");
+  window.confirm("Would you like to add special characters?");
   const password = generatePassword();
   const passwordText = document.querySelector("#password");
 
