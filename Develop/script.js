@@ -1,6 +1,3 @@
-// Assignment code here
-
-//
 const characters = {
   lowerCase: "abcdefghijklmnopqrstuvwxyz",
   upperCase: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
@@ -9,10 +6,8 @@ const characters = {
 };
 
 let charFinal = "";
-// Get references to the #generate element
 const generateBtn = document.querySelector("#generate");
 
-// Write password to the #password input
 function promptUser() {
   let passwordLength = window.prompt(
     "Please select a password length between 8 and 128 characters"
@@ -46,6 +41,8 @@ function promptUser() {
   return generatePassword(passwordLength);
 }
 
+// code below is obtained and refactored from https://www.programiz.com/javascript/examples/generate-random-strings
+
 function generatePassword(passwordLength) {
   let result = "";
   const charFinalLength = charFinal.length;
@@ -62,5 +59,4 @@ function writePassword() {
   passwordText.value = password;
 }
 
-// Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
