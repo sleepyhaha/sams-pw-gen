@@ -10,7 +10,7 @@ Clicking the generate password button will prompt the user to enter the length o
 
 The script will then display the password within the "Your Secure Password" box.
 
-![Password generator screenshot](/Develop/password-screenshot.png)
+![Password generator screenshot](/assets/img/password-screenshot.png)
 
 ## Installation
 
