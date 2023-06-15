@@ -10,7 +10,7 @@ Clicking the generate password button will prompt the user to enter the length o
 
 The script will then display the password within the "Your Secure Password" box.
 
-![Password generator screenshot](password-screenshot.png)
+![Password generator screenshot](/Develop/password-screenshot.png)
 
 ## Installation
 
@@ -19,6 +19,6 @@ To view the final outcome, you can either:
 - Head to the GitHub pages link, or;
 - Clone the repository to your local environment.
 
-The Github Pages link is: https://sleepyhaha.github.io/week-3-challenge/
+The Github Pages link is: https://sleepyhaha.github.io/sams-pw-gen/
 
-Otherwise, clone the repo to your local environment using the following SSH key: git@github.com:sleepyhaha/week-3-challenge.git
+Otherwise, clone the repo to your local environment using the following SSH key: git@github.com:sleepyhaha/sams-pw-gen.git
